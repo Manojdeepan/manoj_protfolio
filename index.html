@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj Deepan M - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    section {
+      padding: 40px;
+    }
+    .intro, .about, .projects, .skills, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #555;
+      display: inline-block;
+    }
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skills-list div {
+      background: #e0e0e0;
+      padding: 10px 20px;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manoj Deepan M</h1>
+    <p>Engineering Student | AI & ML Enthusiast | Problem Solver</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a 3rd-year Computer Science Engineering student at National Engineering College, Kovilpatti. I am pursuing an Honors Degree with a specialization in Artificial Intelligence and Machine Learning. With hands-on experience in building AI/NLP applications, Java desktop tools, and web development projects, I am constantly learning and solving problems to grow professionally.</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project">
+      <h3>Weather Prediction System (Java)</h3>
+      <p>Built a desktop application using Java Swing that fetches real-time weather data from the OpenWeatherMap API. Integrated MySQL to manage and retrieve search history.</p>
+    </div>
+
+    <div class="project">
+      <h3>Date and Time Extraction using NLP</h3>
+      <p>Developed a Python application using spaCy and dateparser to extract and standardize date/time expressions from unstructured documents.</p>
+    </div>
+
+    <div class="project">
+      <h3>QR Code Reader for Product Info</h3>
+      <p>Created a Python-based QR scanner to decode product data including manufacture and expiry dates, and calculated days remaining until expiry.</p>
+    </div>
+
+    <div class="project">
+      <h3>LMS with Gemini AI</h3>
+      <p>Designed a full-stack Learning Management System integrated with Gemini AI to generate course summaries, explanations, and quizzes dynamically.</p>
+    </div>
+
+    <div class="project">
+      <h3>Web Development Mini Projects</h3>
+      <ul>
+        <li>Landing Page for E-Commerce Website</li>
+        <li>Currency Converter Web App</li>
+        <li>Calculator Web App</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div>Java</div>
+      <div>Python</div>
+      <div>C</div>
+      <div>SQL</div>
+      <div>AI/ML</div>
+      <div>Natural Language Processing</div>
+      <div>Web Development</div>
+      <div>OpenCV</div>
+      <div>Git & GitHub</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-form">
+      <form action="mailto:manojdeepan9842@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Manoj Deepan M | <a style="color:#ddd;" href="https://github.com/Manojdeepan" target="_blank">GitHub</a> | <a style="color:#ddd;" href="https://linkedin.com/in/manoj-deepan" target="_blank">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
